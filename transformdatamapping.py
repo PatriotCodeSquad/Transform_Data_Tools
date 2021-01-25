@@ -97,3 +97,22 @@ def singledisptrans(obj,mapschema):
         return ""
 
     return transformdict(obj)
+
+"""
+To test the Program you need a Dict with Data, and a Mapping Dict.
+The Mapping Dict assigns functions to Dict keys
+
+mapschema = { 
+              'key_one': make_ints_in_list_float,
+              'key_two': [CapitalizeString,addanoda,addtostring,addanoda,CapitalizeString],
+              'key_three':[CapitalizeString,addanoda,CapitalizeString],
+              'hh':[addtoint,addtoint,addtoint,addtoint,addtoint],
+              'cj':CapitalizeString
+              }   
+
+testdict = {'key_one' : [3,4,5,6,1428,1488], 'key_two': 'maga',
+            'key_three':'patriots assemble','hh':88,'bloodsoil':'wuww'}
+
+singledisptrans(testdict,mapschema)
+
+"""
